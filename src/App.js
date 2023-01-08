@@ -2,6 +2,8 @@ import './App.css';
 import { DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, UncontrolledDropdown } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBeer } from '@fortawesome/free-solid-svg-icons'
+import FavBeer from './components/FavBeer';
+import BeerList from './components/BeerList';
 
 function App() {
   const brand = 'We Love Beer';
@@ -25,6 +27,8 @@ function App() {
           </UncontrolledDropdown>
         </Nav>
       </Navbar>
+      <FavBeer />
+      <BeerList />
     </div>
   );
 }
